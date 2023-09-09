@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/smooth_border_background"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:src="@drawable/search"
+        android:layout_width="@dimen/iconH"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="@dimen/iconH" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/textH"
+
+        android:hint="Find for food or restaurant"
+        />
+
+
+</LinearLayout>

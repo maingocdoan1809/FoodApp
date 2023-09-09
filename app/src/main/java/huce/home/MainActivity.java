@@ -1,8 +1,10 @@
-package huce.foodapp;
+package huce.home;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import huce.foodapp.R;
 
 public class MainActivity extends AppCompatActivity {
 

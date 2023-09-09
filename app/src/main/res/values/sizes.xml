@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fsNormal" >16sp</dimen>
+    <dimen name="fsLarge" >24sp</dimen>
+    <dimen name="fsBig" >30sp</dimen>
+    <dimen name="fsBigger" >35sp</dimen>
+    <dimen name="imgH" >200dp</dimen>
+    <dimen name="textH" >50dp</dimen>
+    <dimen name="iconH" >30dp</dimen>
+    <dimen name="p_3" >30dp</dimen>
+    <dimen name="p_2" >20dp</dimen>
+    <dimen name="p_1" >10dp</dimen>
+</resources>

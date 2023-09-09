@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="fade">#9DB2BF</color>
+    <color name="quite_black">#001C30</color>
+    <color name="pink_white">#F9F5F6</color>
+
+    <color name="link">#0E21A0</color>
+    <color name="blue_dark">#053B50</color>
+    <color name="blue">#7091F5</color>
+
+
 </resources>

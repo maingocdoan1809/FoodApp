@@ -1,4 +1,4 @@
-package huce.foodapp;
+package huce.home;
 
 import android.content.Context;
 
