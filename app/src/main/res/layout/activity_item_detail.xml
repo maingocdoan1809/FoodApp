@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="@dimen/p_3"
+    android:layout_height="match_parent"
+    tools:context="huce.home.ItemDetailActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:src="@drawable/left"
+        app:fabCustomSize="40dp"
+        app:layout_constraintStart_toStartOf="@id/cardImgHolder"
+        app:layout_constraintTop_toTopOf="@id/cardImgHolder" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardImgHolder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgFoodBg"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/phobo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pho Bo"
+        android:id="@+id/txtFoodTitle"
+        android:layout_marginTop="@dimen/p_1"
+        android:textSize="@dimen/fsBig"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardImgHolder" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40.000 Vnd"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red"
+        android:id="@+id/txtPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFoodTitle" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="5dp"
+        android:padding="0dp"
+        android:text="-"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrice"
+        app:layout_constraintEnd_toStartOf="@+id/txtQuantity"
+        app:layout_constraintTop_toTopOf="@+id/txtFoodTitle" />
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="01"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrice"
+        app:layout_constraintRight_toLeftOf="@+id/btnAdd"
+        app:layout_constraintTop_toTopOf="@+id/txtFoodTitle" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:padding="0dp"
+        android:textSize="10dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/txtQuantity"
+        app:layout_constraintTop_toTopOf="@+id/txtFoodTitle" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/txtPrice"
+        android:layout_marginTop="@dimen/p_1"
+        android:layout_width="match_parent"
+        android:text="Pho, “Phở” in Vietnamese, is a Vietnamese noodle dish consisting of rice noodles, broth, meat and fresh herbs such as scallion, cilantro, and onion. Pho is served in a thick ceramic bowl when the broth is still boiling hot, and is sided with some fresh basils, bean sprouts, and a lime wedge."
+        android:layout_height="wrap_content" />
+
+    <Button
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Add to cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

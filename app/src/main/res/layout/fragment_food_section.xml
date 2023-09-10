@@ -1,38 +1,39 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="huce.home.FoodSectionFragment">
-    <LinearLayout
+
+    <TextView
+        android:id="@+id/titleListSection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Fast food"
+        android:paddingLeft="@dimen/p_1"
+        app:layout_constraintBottom_toTopOf="@+id/listFoodView"
+        android:textSize="@dimen/fsNormal"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/viewAllItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View all"
+        android:paddingRight="@dimen/p_1"
+        app:layout_constraintBottom_toTopOf="@+id/listFoodView"
+        android:textColor="@color/link"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.recyclerview.widget.RecyclerView
+        app:layout_constraintTop_toBottomOf="@+id/titleListSection"
+        android:id="@+id/listFoodView"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:padding="@dimen/p_1"
-            android:layout_height="wrap_content" >
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Fast food"
-                android:textSize="@dimen/fsNormal"
-                android:textStyle="bold" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="View all"
-                android:textColor="@color/link" />
-        </LinearLayout>
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/listFoodView"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:listitem="@layout/card_item_row" />
-    </LinearLayout>
+        android:orientation="horizontal"
+        tools:listitem="@layout/card_item_row" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
